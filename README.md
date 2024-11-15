@@ -120,3 +120,8 @@ Tham khảo:
 •	Triển khai ReactJS WebApp lên Github Pages - YouTube
 •	Tạo và deploy ứng dụng React lên Github Pages
 Hy vọng hướng dẫn này sẽ giúp bạn triển khai thành công ứng dụng React lên GitHub Pages.
+
+
+++++++++++++++++++++
+1. trước hết là phải up load code lên hết nhánh master
+2. chạy lệnh: npm run deploy
