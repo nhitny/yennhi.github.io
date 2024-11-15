@@ -74,3 +74,49 @@ You will find all the components used and you can edit your information accordin
 Give a ⭐ if you like this website!
 
 <a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+
+
+
+
+### run in github.io
+
+Để triển khai ứng dụng React của bạn lên GitHub Pages tại địa chỉ https://nhitny.github.io/, bạn có thể thực hiện theo các bước sau:
+1. Cài đặt gói gh-pages:
+Gói gh-pages giúp bạn dễ dàng triển khai ứng dụng React lên GitHub Pages. Cài đặt gói này bằng lệnh:
+bash
+
+npm install gh-pages --save-dev
+2. Cập nhật tệp package.json:
+Mở tệp package.json và thêm hoặc chỉnh sửa các mục sau:
+•	Thêm thuộc tính homepage:
+json
+
+"homepage": "https://nhitny.github.io/"
+•	Thêm các script cho việc triển khai:
+json
+
+"scripts": {
+  // ... các script khác
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+3. Triển khai ứng dụng:
+Chạy lệnh sau để xây dựng và triển khai ứng dụng lên GitHub Pages:
+bash
+
+npm run deploy
+Lệnh này sẽ tạo thư mục build và đẩy nội dung của nó lên nhánh gh-pages trên kho lưu trữ GitHub của bạn.
+4. Cấu hình GitHub Pages:
+Truy cập vào kho lưu trữ của bạn trên GitHub, vào phần "Settings" > "Pages". Tại đây, chọn nhánh gh-pages làm nguồn cho GitHub Pages.
+5. Kiểm tra kết quả:
+Sau khi hoàn tất, bạn có thể truy cập ứng dụng tại địa chỉ:
+arduino
+
+https://nhitny.github.io/
+Lưu ý:
+•	Đảm bảo rằng bạn đã commit và push tất cả các thay đổi lên nhánh master trước khi triển khai.
+•	Nếu bạn gặp lỗi trong quá trình triển khai, hãy kiểm tra lại các bước trên và đảm bảo rằng bạn đã thực hiện đúng.
+Tham khảo:
+•	Triển khai ReactJS WebApp lên Github Pages - YouTube
+•	Tạo và deploy ứng dụng React lên Github Pages
+Hy vọng hướng dẫn này sẽ giúp bạn triển khai thành công ứng dụng React lên GitHub Pages.
